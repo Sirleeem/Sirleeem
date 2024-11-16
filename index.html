@@ -1,97 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sirleeem's Interactive Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sirleeem | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Hero Section -->
-    <header class="hero">
-        <h1>Hello, I'm <span>Sirleeem</span></h1>
-        <p>Network Engineer | Creative Developer | Designer</p>
-        <button onclick="scrollToSection('#about')">Explore</button>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <!-- Header Section -->
+  <header id="home">
+    <div class="container">
+      <h1 class="title">Sirleeem</h1>
+      <p class="subtitle">Building connections, one network at a time.</p>
+      <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm Sirleeem, a Network Engineer and developer with a passion for creating engaging digital experiences.</p>
-    </section>
+  <!-- About Section -->
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <p>
+      I’m Sirleeem, a final-year Computer Science student at Abubakar Tafawa Balewa University, Bauchi.  
+      As a budding Network Engineer, I specialize in designing and optimizing network systems while exploring 
+      how networking intersects with software development.
+    </p>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill">
-                <span>Networking</span>
-                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
-            </div>
-            <div class="skill">
-                <span>HTML</span>
-                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
-            </div>
-            <div class="skill">
-                <span>CSS</span>
-                <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
-            </div>
-            <div class="skill">
-                <span>JavaScript</span>
-                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
-            </div>
-            <!-- Add more skills if needed -->
-        </div>
-    </section>
+  <!-- Skills Section -->
+  <section id="skills" class="slide-up">
+    <h2>Skills</h2>
+    <div class="skill-list">
+      <div class="skill">TCP/IP, VLANs, Subnetting</div>
+      <div class="skill">Wireshark, Cisco Packet Tracer</div>
+      <div class="skill">HTML, CSS, JavaScript</div>
+      <div class="skill">CCNA (in progress)</div>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="carousel">
-            <div class="carousel-item active">
-                <h3>Project 1</h3>
-                <p>Description of project 1.</p>
-            </div>
-            <div class="carousel-item">
-                <h3>Project 2</h3>
-                <p>Description of project 2.</p>
-            </div>
-            <div class="carousel-item">
-                <h3>Project 3</h3>
-                <p>Description of project 3.</p>
-            </div>
-            <button class="carousel-btn prev">Prev</button>
-            <button class="carousel-btn next">Next</button>
-        </div>
-    </section>
+  <!-- Projects Section -->
+  <section id="projects" class="zoom-in">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Network Simulations</h3>
+      <p>Designed topologies using Packet Tracer to demonstrate VLANs and routing protocols.</p>
+    </div>
+    <div class="project">
+      <h3>Interactive Portfolio</h3>
+      <p>This portfolio showcases my web development skills using HTML, CSS, and JavaScript.</p>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+  <!-- Contact Section -->
+<section id="contact" class="fade-in">
+  <h2>Connect with Me</h2>
+  <p>Feel free to reach out to me through any of these platforms:</p>
+  <div class="social-links">
+    <a href="https://twitter.com/Sirleeeeeem" target="_blank" class="social-icon twitter" aria-label="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://instagram.com/_Sirleeem_" target="_blank" class="social-icon instagram" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://facebook.com/Sirleeem" target="_blank" class="social-icon facebook" aria-label="Facebook">
+      <i class="fab fa-facebook"></i>
+    </a>
+    <a href="mailto:Sirleeem101@gmail.com" class="social-icon email" aria-label="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Sirleeem</p>
-    </footer>
+  <footer>
+    <p>&copy; 2024 Sirleeem. All Rights Reserved.</p>
+  </footer>
 
-    <!-- Dark Mode and Scroll to Top Buttons -->
-    <button id="dark-mode-toggle">Dark Mode</button>
-    <button id="scroll-top" onclick="scrollToTop()">Top</button>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
