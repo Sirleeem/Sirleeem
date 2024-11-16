@@ -112,7 +112,55 @@ section h2 {
   font-size: 0.9rem;
   color: #b0b0b0;
 }
+/* Experience Section */
+#experience {
+  padding: 2rem 1rem;
+  text-align: center;
+}
 
+.experience-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.experience {
+  background: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.experience h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  color: rgb(29, 161, 242);
+  margin-bottom: 1rem;
+}
+
+.experience-icon {
+  font-size: 1.5rem;
+  color: rgb(29, 161, 242);
+}
+
+.experience p, .experience ul {
+  font-size: 1rem;
+  color: #b0b0b0;
+}
+
+.experience ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+.experience ul li {
+  margin-bottom: 0.5rem;
+}
 /* Projects Section */
 #projects {
   padding: 2rem 1rem;
