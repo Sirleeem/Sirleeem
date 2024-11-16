@@ -6,9 +6,9 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
-  background: #f4f4f9;
-  color: #333;
+  font-family: 'Courier New', Courier, monospace;
+  background: #121212;
+  color: #f4f4f9;
   scroll-behavior: smooth;
 }
 
@@ -17,15 +17,15 @@ header {
   background: linear-gradient(120deg, #282c34, #333);
   color: white;
   text-align: center;
-  padding: 3rem 0;
+  padding: 2rem 0;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 header .title {
-  font-size: 3rem;
-  animation: fadeInDown 1s ease-in-out;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 header nav {
@@ -36,135 +36,96 @@ header nav a {
   margin: 0 1rem;
   color: white;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 header nav a:hover {
   text-decoration: underline;
 }
 
-/* Section styles */
-section {
+/* About Section */
+#about {
   padding: 4rem 2rem;
   text-align: center;
 }
 
-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-}
-
-/* About Section */
-#about p {
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.6;
-  font-size: 1.1rem;
+.hacker-text {
+  color: #1da1f2;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+  background: #1e1e1e;
+  padding: 1rem;
+  border-radius: 8px;
 }
 
 /* Skills Section */
 .skill-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  flex-wrap: wrap;
 }
 
 .skill {
-  background: #fff;
-  border: 1px solid #ddd;
-  padding: 1rem 2rem;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  background: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 250px;
+}
+
+.skill i {
+  font-size: 3rem;
+  color: #1da1f2;
+  margin-bottom: 1rem;
+}
+
+.skill h3 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.skill p {
+  font-size: 1rem;
+  color: #ccc;
 }
 
 .skill:hover {
-  transform: scale(1.1);
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* Projects Section */
 .project {
-  background: #fff;
+  background: #1e1e1e;
   padding: 2rem;
-  margin: 1rem auto;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   max-width: 700px;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease-in-out;
+}
+
+.project h3 {
+  font-size: 1.8rem;
+  color: #1da1f2;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project p {
+  color: #ccc;
+  font-size: 1rem;
+  margin: 1rem 0;
 }
 
 .project:hover {
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 2rem;
-  background: #282c34;
-  color: white;
-}
-
-/* Animations */
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.fade-in {
-  opacity: 0;
-  animation: fadeIn 2s forwards;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.slide-up {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: slideUp 1.5s forwards;
-}
-
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.zoom-in {
-  opacity: 0;
-  transform: scale(0.9);
-  animation: zoomIn 1.5s forwards;
-}
-
-@keyframes zoomIn {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-} /* <-- Missing closing brace added here */
 
 /* Social Links Section */
 .social-links {
@@ -176,16 +137,14 @@ footer {
 
 .social-icon {
   font-size: 2.5rem;
-  color: #333;
+  color: #ccc;
   transition: transform 0.3s ease, color 0.3s ease;
-  text-decoration: none;
 }
 
 .social-icon:hover {
   transform: scale(1.2);
 }
 
-/* Individual Icon Colors */
 .social-icon.twitter {
   color: #1da1f2;
 }
@@ -194,26 +153,10 @@ footer {
   color: #e1306c;
 }
 
-social-icon.facebook {
+.social-icon.facebook {
   color: #4267b2;
 }
 
 .social-icon.email {
   color: #ea4335;
-}
-
-.social-icon.twitter:hover {
-  color: #0d8cec;
-}
-
-.social-icon.instagram:hover {
-  color: #c2185b;
-}
-
-.social-icon.facebook:hover {
-  color: #324b7d;
-}
-
-.social-icon.email:hover {
-  color: #c5221f;
 }
