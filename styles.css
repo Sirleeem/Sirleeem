@@ -42,9 +42,9 @@ section h2 {
   text-align: center;
   font-size: 1.2rem;
   color: rgb(200, 0, 255);
-  animation: typewriter 4s steps(40) 1 normal both, blink 0.5s step-end infinite;
-  white-space: nowrap;
+  animation: typewriter 5s steps(70, end) 1 normal both, blink 0.5s step-end infinite;
   overflow: hidden;
+  white-space: nowrap;
   border-right: 2px solid rgba(200, 0, 255, 0.7);
 }
 
