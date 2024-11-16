@@ -4,85 +4,88 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sirleeem's Portfolio</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Header -->
+  <!-- Header Section -->
   <header>
     <h1 class="title">Sirleeem</h1>
     <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#social">Social</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
   <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
-    <p class="hacker-text">I am a final-year Computer Science student at Abubakar Tafawa Balewa University, Bauchi. I specialize in Networking, Web Development, and creative problem-solving.</p>
+    <p class="typewriter">I am a final-year student of Computer Science at Abubakar Tafawa Balewa University, Bauchi, with a passion for networking and web development.</p>
   </section>
 
   <!-- Skills Section -->
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="skill-list">
-    <div class="skill">
-      <div class="skill-icon">&#128187;</div>
-      <h3>Networking</h3>
-      <p>Configuring and troubleshooting networks with advanced tools.</p>
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-list">
+      <div class="skill">
+        <i class="fas fa-network-wired skill-icon"></i>
+        <h3>Networking</h3>
+        <p>Configuring and troubleshooting networks with advanced tools.</p>
+      </div>
+      <div class="skill">
+        <i class="fab fa-html5 skill-icon"></i>
+        <h3>HTML5</h3>
+        <p>Creating structured and accessible web content.</p>
+      </div>
+      <div class="skill">
+        <i class="fab fa-css3-alt skill-icon"></i>
+        <h3>CSS3</h3>
+        <p>Crafting responsive and visually appealing web designs.</p>
+      </div>
+      <div class="skill">
+        <i class="fab fa-js skill-icon"></i>
+        <h3>JavaScript</h3>
+        <p>Building interactive and dynamic web applications.</p>
+      </div>
     </div>
-    <div class="skill">
-      <div class="skill-icon">&#128736;</div>
-      <h3>Web Development</h3>
-      <p>Creating structured and accessible web content.</p>
-    </div>
-    <div class="skill">
-      <div class="skill-icon">&#128295;</div>
-      <h3>Styling</h3>
-      <p>Crafting responsive and visually appealing web designs.</p>
-    </div>
-    <div class="skill">
-      <div class="skill-icon">&#128187;</div>
-      <h3>JavaScript</h3>
-      <p>Building interactive and dynamic web applications.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- Projects Section -->
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="project">
-    <h3><span class="project-icon">&#128187;</span> Network Management Dashboard</h3>
-    <p>Developed a dashboard to monitor and manage network traffic in real-time using Python and Flask.</p>
-  </div>
-  <div class="project">
-    <h3><span class="project-icon">&#128736;</span> Portfolio Website</h3>
-    <p>Designed and built a personal portfolio using advanced HTML, CSS, and JavaScript.</p>
-  </div>
-  <div class="project">
-    <h3><span class="project-icon">&#128274;</span> Secure File Transfer</h3>
-    <p>Implemented a secure file transfer protocol using OpenSSH and encryption techniques.</p>
-  </div>
-</section>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3><i class="fas fa-server project-icon"></i> Network Management Dashboard</h3>
+      <p>Developed a dashboard to monitor and manage network traffic in real-time using Python and Flask.</p>
+    </div>
+    <div class="project">
+      <h3><i class="fas fa-laptop-code project-icon"></i> Portfolio Website</h3>
+      <p>Designed and built a personal portfolio using advanced HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="project">
+      <h3><i class="fas fa-shield-alt project-icon"></i> Secure File Transfer</h3>
+      <p>Implemented a secure file transfer protocol using OpenSSH and encryption techniques.</p>
+    </div>
+  </section>
 
-<!-- Social Section -->
-<section id="social">
-  <h2>Social Media</h2>
-  <div class="social-links">
-    <a href="https://twitter.com/Sirleeeeeem" class="social-icon twitter" target="_blank">Twitter</a>
-    <a href="https://instagram.com/_Sirleeem_" class="social-icon instagram" target="_blank">Instagram</a>
-    <a href="https://facebook.com/Sirleeem" class="social-icon facebook" target="_blank">Facebook</a>
-    <a href="mailto:Sirleeem101@gmail.com" class="social-icon email">Email</a>
-  </div>
-</section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="social-links">
+      <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="mailto:Sirleeem101@gmail.com" class="social-icon email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </section>
 
-  <!-- Footer -->
   <footer>
     <p>© 2024 Sirleeem. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
