@@ -1,153 +1,244 @@
-/* Reset */
+/* General Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Body and Basic Styling */
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    transition: background-color 0.3s ease;
+  font-family: 'Arial', sans-serif;
+  background: #f4f4f9;
+  color: #333;
+  scroll-behavior: smooth;
 }
 
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 10em 2em;
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
-    color: #fff;
-    animation: fadeIn 2s ease;
+/* Header Section */
+header {
+  background: linear-gradient(120deg, #282c34, #333);
+  color: white;
+  text-align: center;
+  padding: 3rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.hero h1 {
-    font-size: 2.5em;
+header .title {
+  font-size: 3rem;
+  animation: fadeInDown 1s ease-in-out;
 }
 
-.hero span {
-    color: #ffd700;
+header nav {
+  margin-top: 1rem;
 }
 
-.hero button {
-    background: #ff6347;
-    color: #fff;
-    padding: 0.7em 2em;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s ease;
+header nav a {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
-.hero button:hover {
-    background: #ff4500;
+header nav a:hover {
+  text-decoration: underline;
 }
 
-/* Sections */
+/* Section Styles */
 section {
-    padding: 3em;
-    max-width: 800px;
-    margin: auto;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* About Section */
+#about p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 1.1rem;
 }
 
 /* Skills Section */
-.skills-container {
-    display: flex;
-    flex-direction: column;
+.skill-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .skill {
-    margin: 1em 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
 
-.progress-bar {
-    background: #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    height: 20px;
+.skill:hover {
+  transform: scale(1.1);
 }
 
-.progress {
-    background: #ff6347;
-    height: 100%;
-    transition: width 1s ease;
+/* Projects Section */
+.project {
+  background: #fff;
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 700px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
-/* Carousel */
-.carousel {
-    display: flex;
-    overflow: hidden;
-    position: relative;
+.project:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-.carousel-item {
-    min-width: 100%;
-    transition: transform 0.5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #eee;
-    padding: 1em;
-    border-radius: 10px;
+/* Contact Section */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
 }
 
-.carousel-item.active {
-    opacity: 1;
-    transform: translateX(0);
+form input, form textarea, form button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 0.5em;
-    cursor: pointer;
+form button {
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.carousel-btn.prev {
-    left: 10px;
-}
-
-.carousel-btn.next {
-    right: 10px;
+form button:hover {
+  background: #555;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #333;
-    color: #fff;
-}
-
-/* Dark Mode */
-.dark-mode {
-    background-color: #333;
-    color: #fff;
-}
-
-/* Scroll to Top Button */
-#scroll-top {
-    position: fixed;
-    bottom: 2em;
-    right: 2em;
-    background: #333;
-    color: #fff;
-    border: none;
-    padding: 0.5em 1em;
-    cursor: pointer;
-    display: none;
-    transition: background 0.3s ease;
-}
-
-#scroll-top:hover {
-    background: #555;
+  text-align: center;
+  padding: 2rem;
+  background: #282c34;
+  color: white;
 }
 
 /* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUp 1.5s forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.zoom-in {
+  opacity: 0;
+  transform: scale(0.9);
+  animation: zoomIn 1.5s forwards;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+/* Social Links Section */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.social-icon {
+  font-size: 2.5rem;
+  color: #333;
+  transition: transform 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Individual Icon Colors */
+.social-icon.twitter {
+  color: #1da1f2;
+}
+
+.social-icon.instagram {
+  color: #e1306c;
+}
+
+.social-icon.facebook {
+  color: #4267b2;
+}
+
+.social-icon.email {
+  color: #ea4335;
+}
+
+.social-icon.twitter:hover {
+  color: #0d8cec;
+}
+
+.social-icon.instagram:hover {
+  color: #c2185b;
+}
+
+.social-icon.facebook:hover {
+  color: #324b7d;
+}
+
+.social-icon.email:hover {
+  color: #c5221f;
+}
 }
