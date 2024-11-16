@@ -98,32 +98,6 @@ section h2 {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Contact Section */
-form {
-  max-width: 500px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-form input, form textarea, form button {
-  width: 100%;
-  padding: 0.8rem;
-  margin-top: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-form button {
-  background: #333;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-form button:hover {
-  background: #555;
-}
-
 /* Footer */
 footer {
   text-align: center;
@@ -190,6 +164,8 @@ footer {
     opacity: 1;
     transform: scale(1);
   }
+} /* <-- Missing closing brace added here */
+
 /* Social Links Section */
 .social-links {
   display: flex;
@@ -218,7 +194,7 @@ footer {
   color: #e1306c;
 }
 
-.social-icon.facebook {
+social-icon.facebook {
   color: #4267b2;
 }
 
@@ -240,5 +216,4 @@ footer {
 
 .social-icon.email:hover {
   color: #c5221f;
-}
 }
