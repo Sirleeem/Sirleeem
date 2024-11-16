@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sirleeem's Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Updated Font Awesome Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMl2VW2Gz65e3c5Wm6H0QYjgoeJ9Q0Z+RxzU8IQ" crossorigin="anonymous">
 </head>
 <body>
   <!-- Header Section -->
@@ -24,10 +25,11 @@
   <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
-    <p class="typewriter">
-      I am a final-year student of Computer Science at Abubakar Tafawa Balewa University, Bauchi.
-      I have a passion for networking and web development.
-    </p>
+    <div class="console">
+      <p><span style="color: rgb(0, 255, 0);">Sirleeem@portfolio:~$</span> <span style="color: rgb(0, 200, 255);">cat about_me.txt</span></p>
+      <p><span style="color: rgb(0, 255, 0);">> </span>I am a final-year student of Computer Science at Abubakar Tafawa Balewa University, Bauchi.</p>
+      <p><span style="color: rgb(0, 255, 0);">> </span>I specialize in networking and web development.</p>
+    </div>
   </section>
 
   <!-- Skills Section -->
@@ -67,6 +69,7 @@
     <div class="project">
       <h3><i class="fas fa-laptop-code project-icon"></i> Portfolio Website</h3>
       <p>Designed and built a personal portfolio using advanced HTML, CSS, and JavaScript.</p>
+      <a href="http://sirleeem.github.io/sirleeem/" target="_blank" rel="noopener noreferrer">View Portfolio</a>
     </div>
     <div class="project">
       <h3><i class="fas fa-shield-alt project-icon"></i> Secure File Transfer</h3>
@@ -78,9 +81,9 @@
   <section id="contact">
     <h2>Contact</h2>
     <div class="social-links">
-      <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
-      <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
-      <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
       <a href="mailto:Sirleeem101@gmail.com" class="social-icon email"><i class="fas fa-envelope"></i></a>
     </div>
   </section>
@@ -88,7 +91,5 @@
   <footer>
     <p>© 2024 Sirleeem. All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
