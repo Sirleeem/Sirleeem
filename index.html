@@ -3,83 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sirleeem | Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <title>Sirleeem's Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header Section -->
-  <header id="home">
-    <div class="container">
-      <h1 class="title">Sirleeem</h1>
-      <p class="subtitle">Building connections, one network at a time.</p>
-      <nav>
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+  <!-- Header -->
+  <header>
+    <h1 class="title">Sirleeem</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#social">Social</a>
+    </nav>
   </header>
 
   <!-- About Section -->
-  <section id="about" class="fade-in">
+  <section id="about">
     <h2>About Me</h2>
-    <p>
-      I’m Sirleeem, a final-year Computer Science student at Abubakar Tafawa Balewa University, Bauchi.  
-      As a budding Network Engineer, I specialize in designing and optimizing network systems while exploring 
-      how networking intersects with software development.
-    </p>
+    <p class="hacker-text">I am a final-year Computer Science student at Abubakar Tafawa Balewa University, Bauchi. I specialize in Networking, Web Development, and creative problem-solving.</p>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="slide-up">
+  <section id="skills">
     <h2>Skills</h2>
     <div class="skill-list">
-      <div class="skill">TCP/IP, VLANs, Subnetting</div>
-      <div class="skill">Wireshark, Cisco Packet Tracer</div>
-      <div class="skill">HTML, CSS, JavaScript</div>
-      <div class="skill">CCNA (in progress)</div>
+      <div class="skill">
+        <i class="fas fa-network-wired"></i>
+        <h3>Networking</h3>
+        <p>Configuring and troubleshooting networks with advanced tools.</p>
+      </div>
+      <div class="skill">
+        <i class="fab fa-html5"></i>
+        <h3>HTML5</h3>
+        <p>Creating accessible and semantic web content.</p>
+      </div>
+      <div class="skill">
+        <i class="fab fa-css3-alt"></i>
+        <h3>CSS3</h3>
+        <p>Styling responsive, modern, and visually appealing interfaces.</p>
+      </div>
+      <div class="skill">
+        <i class="fab fa-js-square"></i>
+        <h3>JavaScript</h3>
+        <p>Interactive and dynamic web applications with vanilla JS.</p>
+      </div>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="zoom-in">
+  <section id="projects">
     <h2>Projects</h2>
     <div class="project">
-      <h3>Network Simulations</h3>
-      <p>Designed topologies using Packet Tracer to demonstrate VLANs and routing protocols.</p>
+      <h3><i class="fas fa-server"></i> Network Management Dashboard</h3>
+      <p>Developed a dashboard to monitor and manage network traffic in real-time using Python and Flask.</p>
     </div>
     <div class="project">
-      <h3>Interactive Portfolio</h3>
-      <p>This portfolio showcases my web development skills using HTML, CSS, and JavaScript.</p>
+      <h3><i class="fas fa-code"></i> Portfolio Website</h3>
+      <p>Designed and built a personal portfolio using advanced HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="project">
+      <h3><i class="fas fa-lock"></i> Secure File Transfer</h3>
+      <p>Implemented a secure file transfer protocol using OpenSSH and encryption techniques.</p>
     </div>
   </section>
 
-  <!-- Contact Section -->
-<section id="contact" class="fade-in">
-  <h2>Connect with Me</h2>
-  <p>Feel free to reach out to me through any of these platforms:</p>
-  <div class="social-links">
-    <a href="https://twitter.com/Sirleeeeeem" target="_blank" class="social-icon twitter" aria-label="Twitter">
-      <i class="fab fa-twitter"></i>
-    </a>
-    <a href="https://instagram.com/_Sirleeem_" target="_blank" class="social-icon instagram" aria-label="Instagram">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://facebook.com/Sirleeem" target="_blank" class="social-icon facebook" aria-label="Facebook">
-      <i class="fab fa-facebook"></i>
-    </a>
-    <a href="mailto:Sirleeem101@gmail.com" class="social-icon email" aria-label="Email">
-      <i class="fas fa-envelope"></i>
-    </a>
-  </div>
-</section>
+  <!-- Social Section -->
+  <section id="social">
+    <h2>Social Media</h2>
+    <div class="social-links">
+      <a href="https://twitter.com/Sirleeeeeem" class="social-icon twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com/_Sirleeem_" class="social-icon instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com/Sirleeem" class="social-icon facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="mailto:Sirleeem101@gmail.com" class="social-icon email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2024 Sirleeem. All Rights Reserved.</p>
+    <p>© 2024 Sirleeem. All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
