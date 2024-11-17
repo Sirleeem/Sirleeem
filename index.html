@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sirleeem's Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <!-- Updated Font Awesome Link -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
   <!-- Header Section -->
@@ -14,10 +13,46 @@
     <h1 class="title">Sirleeem</h1>
     <nav>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li class="nav-item">
+          <a href="#about">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 12a5 5 0 100-10 5 5 0 000 10zM2 22v-1a8 8 0 1116 0v1H2z" />
+            </svg>
+            About
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#skills">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M21 3H3a2 2 0 00-2 2v14a2 2 0 002 2h18a2 2 0 002-2V5a2 2 0 00-2-2zM4 7h16v2H4V7zm0 4h10v2H4v-2zm12 0h4v6h-4v-6zM4 15h10v2H4v-2z" />
+            </svg>
+            Skills
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 2L3 6v6c0 5.52 3.5 10.74 9 12 5.5-1.26 9-6.48 9-12V6l-9-4zm0 18c-3.71-.94-6-4.52-6-8.4V8.27l6 3.2v8.53z" />
+            </svg>
+            Projects
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#experience">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M9 2H7v4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V8a2 2 0 00-2-2h-3V2h-2v4H9V2z" />
+            </svg>
+            Experience
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 2a10 10 0 00-7.32 17.32l-2.83 2.83a1 1 0 001.41 1.41l2.83-2.83A10 10 0 1012 2zm-1 14v-4H7v-2h4V7h2v3h4v2h-4v4h-2z" />
+            </svg>
+            Contact
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -58,28 +93,25 @@
       </div>
     </div>
   </section>
-  
-<!-- Experience Section -->
-<section id="experience">
-  <h2>Experience</h2>
-  <div class="experience-list">
-    <!-- Internship -->
-    <div class="experience">
-      <h3><i class="fas fa-briefcase experience-icon"></i> Internship</h3>
-      <p><strong>ICT Unit, Federal Teaching Hospital Gombe</strong></p>
-      <p>Assisted in managing network infrastructure, troubleshooting hardware and software issues, and ensuring seamless communication across departments.</p>
-    </div>
 
-    <!-- Courses -->
-    <div class="experience">
-      <h3><i class="fas fa-chalkboard-teacher experience-icon"></i> Networking Courses</h3>
-      <ul>
-        <li>Completed various networking courses on <strong>Udemy</strong>, including advanced topics in network management and security.</li>
-        <li><strong>CCNA Certification</strong> - In Progress (Focus on routing, switching, and network fundamentals).</li>
-      </ul>
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="experience-list">
+      <div class="experience">
+        <h3><i class="fas fa-briefcase experience-icon"></i> Internship</h3>
+        <p><strong>ICT Unit, Federal Teaching Hospital Gombe</strong></p>
+        <p>Assisted in managing network infrastructure, troubleshooting hardware and software issues, and ensuring seamless communication across departments.</p>
+      </div>
+      <div class="experience">
+        <h3><i class="fas fa-chalkboard-teacher experience-icon"></i> Networking Courses</h3>
+        <ul>
+          <li>Completed various networking courses on <strong>Udemy</strong>, including advanced topics in network management and security.</li>
+          <li><strong>CCNA Certification</strong> - In Progress (Focus on routing, switching, and network fundamentals).</li>
+        </ul>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Projects Section -->
   <section id="projects">
@@ -101,14 +133,14 @@
 
   <!-- Contact Section -->
   <section id="contact">
-  <h2>Contact</h2>
-  <div class="social-links">
-    <a href="https://twitter.com/Sirleeeeeem" class="social-icon twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="https://instagram.com/_Sirleeem_" class="social-icon instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://facebook.com/Sirleeem" class="social-icon facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
-    <a href="mailto:Sirleeem101@gmail.com" class="social-icon email" target="_blank"><i class="fas fa-envelope"></i></a>
-  </div>
-</section>
+    <h2>Contact</h2>
+    <div class="social-links">
+      <a href="https://twitter.com/Sirleeeeeem" class="social-icon twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com/_Sirleeem_" class="social-icon instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com/Sirleeem" class="social-icon facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="mailto:Sirleeem101@gmail.com" class="social-icon email" target="_blank"><i class="fas fa-envelope"></i></a>
+    </div>
+  </section>
 
   <footer>
     <p>© 2024 Sirleeem. All rights reserved.</p>
